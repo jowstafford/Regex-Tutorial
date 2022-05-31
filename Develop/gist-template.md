@@ -40,9 +40,12 @@ The Hex Value expression has () (parentheses). In the expression, [a-f0-9]{6}|[a
 
 ### Bracket Expressions
 The [] is covered in the OR Operators section. In this case, the [a-f0-9] means that the expresssion matches a string that has any letter between a and f or any number between 0 and 9 or a mixture of the two.  
+
 ### Greedy and Lazy Match
+The only greedy operators we have are our quantifiers (curly braces). They expand the match as far as they can.
 
 ### Boundaries
+The Hex Value expression has no boundaries (\b before and after the expression. This means the expression will perform a whole words only search).
 
 ### Back-references
 
