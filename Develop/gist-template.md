@@ -30,14 +30,16 @@ The Hex Value expression has the ? (question mark) and two {} (curly brackets or
 The Hex Value expression has a | (vertical slash or upright slash, meaning 'it is true that...' or 'such that...') and two [] (brackets, crotchets, closed brackets, or hard brackets) OR Operators. The ([a-f0-9]{6}|[a-f0-9]{3}) in this case means that the expresssion matches a string that has #? followed by [a-f0-9]{6} or [a-f0-9]{3} because of the |, but a-f0-9 in both statements are not captured because of the [].
 
 ### Character Classes
-This expression has not Chacter Classes (\d, \w, \s, meaning the expression matches a single character, word, or whitespace respectively).
+This Hex Value expression has not Chacter Classes (\d, \w, \s, meaning the expression matches a single character, word, or whitespace respectively).
 
 ### Flags
+Although the Hex Value expression sits in between two / (forward slashes), the expression does not have any flags (g, m, or i after the last forward slash, meaning the expression is global, multi-line, or insensitive respectively).
 
 ### Grouping and Capturing
+The Hex Value expression has () (parentheses). In the expression, [a-f0-9]{6}|[a-f0-9]{3} is grouped together inside the parentheses, but only the {6} or {3} are captured because the a-f0-9 statement sits inside the [], which means the satement will not be captured.
 
 ### Bracket Expressions
-
+The [] is covered in the OR Operators section. In this case, the [a-f0-9] means that the expresssion matches a string that has any letter between a and f or any number between 0 and 9 or a mixture of the two.  
 ### Greedy and Lazy Match
 
 ### Boundaries
