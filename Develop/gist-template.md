@@ -1,10 +1,11 @@
-# Title (replace with your title)
+# Hex Value Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+A regular expression, Regex for short, is an order of characters that describes a specific search pattern.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This regular expression is matching a Hex Value. Description Below.
+code snippet: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Table of Contents
 
