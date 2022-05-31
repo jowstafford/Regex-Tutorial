@@ -1,9 +1,7 @@
 # Hex Value Regex Tutorial
-
 A regular expression, Regex for short, is an order of characters that describes a specific search pattern.
 
 ## Summary
-
 This regular expression is matching a Hex Value. Description Below.
 code snippet: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
@@ -22,10 +20,11 @@ code snippet: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-
 ### Anchors
+The Hex Value expression has a ^ (carot or circumflex) and a $ (dollar symbol) anchors which means the expression will look for an exact string match. This means that the expression is looking for #?([a-f0-9]{6}|[a-f0-9]{3}) exactly.
 
 ### Quantifiers
+The Hex Value expression has the ? (question mark) and two {} (curly brackets/ curly braces) quantifiers in the expression. The ? means that the expresssion matches a string that has # followed by zero. The {6} and {3} means that the expresssion matches a string that has [a-f0-9] followed by 6 or 3 exactly.
 
 ### OR Operator
 
